@@ -15,6 +15,8 @@ Agent Drive introduces a simple philosophy for AI operations: **Pass the pointer
 *   When the Agent finishes working, it saves the output to the Drive and replies with the new URI.
 
 ## ✨ Key Features
+*   **Enterprise Identity (Entra ID):** Built-in Azure AD integration. Agents access their workspaces automatically via Managed Identities; Operators use `az login`.
+*   **Role-Based Access Control (RBAC):** Strict workspace isolation by default. Identities with the `AgentDrive.Admin` role can manage cross-workspace handovers.
 *   **Dedicated Agent Workspaces:** Every AI agent gets its own isolated drive (like any Cloud Drive, but for AI).
 *   **Standardized Handover:** Seamless Human ↔ Agent and Agent ↔ Agent file sharing.
 *   **Pluggable Architecture:** Designed to work via direct OS-level SMB/NFS mounts (for Agent VMs) or via API/SDK (Python/Node.js).
