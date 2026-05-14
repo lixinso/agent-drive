@@ -2,7 +2,7 @@ from pathlib import Path
 from azure.storage.blob import BlobServiceClient
 from ..core import StorageProvider
 
-class AzureProvider(StorageProvider):
+class AzureBlobProvider(StorageProvider):
     """
     Azure Blob Storage provider.
     Connects via Entra ID (DefaultAzureCredential) enabling true RBAC data-plane access.
